@@ -61,6 +61,21 @@
             border: 4px solid white;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+        .photos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 <body>
@@ -72,9 +87,15 @@
 
         <!-- ИЗМЕНЕНИЕ 3: Новый раздел "Обо мне" и котик -->
         <div class="about-section">
-            <h2>Обо мне</h2>
-            <p>Я студентка GUAP, изучаю IT</p>
-        </div>
+    <h2>Обо мне</h2>
+    <p>Я студентка GUAP, изучаю IT</p>
+    
+    <h3>Мои интересы</h3>
+    <div class="photos">
+        <img src="https://picsum.photos/seed/cat1/200/200" alt="Фото 1" class="photo">
+        <img src="https://picsum.photos/seed/cat2/200/200" alt="Фото 2" class="photo">
+        <img src="https://picsum.photos/seed/cat3/200/200" alt="Фото 3" class="photo">
     </div>
+</div>
 </body>
 </html>
